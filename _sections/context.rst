@@ -41,5 +41,5 @@ General Approach
      * Code (already in place!)
      * Documentation
    
-   * Integration of TfN tools as widely as possible
+   * Consistency with existing TfN setups as widely as possible
    * Prioritise open-source data
