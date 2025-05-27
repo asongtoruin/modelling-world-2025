@@ -7,3 +7,7 @@
     font-family: 'Atkinson Hyperlegible Mono', sans-serif;
     text-transform: none;
 }
+
+.reveal pre.code-wrapper {
+    font-size: 0.3em;
+}
