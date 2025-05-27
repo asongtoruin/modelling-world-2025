@@ -1,3 +1,9 @@
+name: Build slides
+
+on:
+  push:
+    branches: [ main ]
+
 jobs:
   # Build job
   build:
@@ -5,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build slides
+      - name: Build with Sphinx
         id: build
         uses: ammaraskar/sphinx-action@8.2.3
         with:
