@@ -55,8 +55,11 @@ Advantages of Using ``DVector``
   * Incompatible segments
   * Warnings if a provided dataset is incomplete
 
-* Easy geographical translations and segment modification
-  * ``DVector.translate_zoning(other_system)``
+* Easy (and chainable!) geographical translations and segment modification
+
+  * ``DVector.translate_zoning``
+  * ``DVector.aggregate``
+
 * Immediate compatibility with other TfN workstreams
 
 Example Data Reading Code [#]_
