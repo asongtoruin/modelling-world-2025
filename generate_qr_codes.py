@@ -26,7 +26,6 @@ for desc, link in links.items():
     img = qr.make_image(
         image_factory=SvgPathImage,
         module_drawer=SvgPathCircleDrawer(size_ratio=Decimal(0.75)),
-        attrib={"href": link}
     )
 
     # Library doesn't seem to let us do a dimension-less SVG. Get the XML instead
@@ -35,6 +34,13 @@ for desc, link in links.items():
     # Pop the height and width attrs
     svg.attrib.pop("height")
     svg.attrib.pop("width")
+
+    # Make it clickable!
+    link = ET.Element("a", attrib={"href": link, "target": "_blank"})
+    path = svg.find("path")
+    link.insert(0, path)
+    svg.remove(path)
+    svg.insert(0, link)
 
     # Rather than img.to_string, we have to use the ET implementation
     with (qrcodes_folder / f"{desc}.svg").open("w") as output_file:
