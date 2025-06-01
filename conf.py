@@ -43,6 +43,7 @@ revealjs_script_conf = {
     "controls": True,
     "progress": True,
     "hash": True,
+    "width": 1200
 }
 
 # -- Options for HTML output -------------------------------------------------
