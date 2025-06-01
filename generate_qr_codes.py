@@ -3,12 +3,13 @@ from pathlib import Path
 
 import qrcode
 from qrcode.compat.etree import ET
-from qrcode.image.svg import SvgPathImage
+from qrcode.image.svg import SvgPathFillImage
 from qrcode.image.styles.moduledrawers.svg import SvgPathCircleDrawer
 
 
 # Force white-coloured QR codes
-SvgPathImage.QR_PATH_STYLE["fill"] = "#ffffff"
+SvgPathFillImage.QR_PATH_STYLE["fill"] = "white"
+SvgPathFillImage.background = "rgba(255, 255, 255, 0)"
 
 links = {
     "this_presentation": "https://asongtoruin.github.io/modelling-world-2025/",
@@ -21,11 +22,11 @@ qrcodes_folder.mkdir(exist_ok=True)
 
 for desc, link in links.items():
 
-    qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
+    qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H, border=2)
     qr.add_data(link)
 
     img = qr.make_image(
-        image_factory=SvgPathImage,
+        image_factory=SvgPathFillImage,
         module_drawer=SvgPathCircleDrawer(size_ratio=Decimal(0.75)),
     )
 
@@ -36,11 +37,13 @@ for desc, link in links.items():
     svg.attrib.pop("height")
     svg.attrib.pop("width")
 
-    # Make it clickable!
+    # Make it clickable! We need to wrap all children (which may include a separate background) in the a
     link = ET.Element("a", attrib={"href": link, "target": "_blank"})
-    path = svg.find("path")
-    link.insert(0, path)
-    svg.remove(path)
+    elements = [x for x in svg]
+    for i, elem in enumerate(elements):
+        svg.remove(elem)
+        link.insert(i, elem)
+
     svg.insert(0, link)
 
     # Rather than img.to_string, we have to use the ET implementation
