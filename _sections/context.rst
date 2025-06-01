@@ -39,4 +39,4 @@ General Approach
   * Documentation
 
 * Consistency with existing TfN setups as widely as possible
-* Prioritise open-source data
+* Prioritise openly-available data
