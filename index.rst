@@ -11,4 +11,8 @@ Open All The Way Down
 Adam Ruszkowski \| Modelling World \| 2026-06-17
 
 .. include:: _sections/context.rst
+.. include:: _sections/data-approach.rst
 .. include:: _sections/coding-approach.rst
+.. include:: _sections/documentation-approach.rst
+
+.. include:: _sections/links-and-questions.rst
