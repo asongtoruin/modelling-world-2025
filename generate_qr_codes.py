@@ -12,7 +12,8 @@ SvgPathImage.QR_PATH_STYLE["fill"] = "#ffffff"
 
 links = {
     "this_presentation": "https://asongtoruin.github.io/modelling-world-2025/",
-    "land-use": "https://github.com/Transport-for-the-North/Land-Use"
+    "land-use": "https://github.com/Transport-for-the-North/Land-Use",
+    "land-use-docs": "https://tfn-land-use-test.readthedocs.io"
 }
 
 qrcodes_folder = Path("_static/qr_codes")
