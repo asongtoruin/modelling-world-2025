@@ -1,40 +1,24 @@
-Coding Approach
-===============
+Code
+====
 
-General Principles
-------------------
+General Approach
+----------------
 
 * Use TfN's existing modules where possible
 * Prioritise flexibility - different scenarios to be tested
 * Make entry points clear
 
   * Store constants in a single location
-  * Scenario-specific inputs out in config files
+  * Scenario-specific inputs put into YAML config files
 
-``DVector``
------------
+YAML config files
+-----------------
 
-* Core structure used to represent data
-* Implemented as part of TfN's ``caf.base`` module
-* Stores representation of:
+* Common format for storing configurations
+* "Human-readable"
+* Plaintext-based
 
-  * Geography (e.g. LSOA)
-  * Segmentation (e.g. "#adults in household")
-
-* Uses ``DataFrame`` from ``pandas`` to store the data "under the hood"
-
-Advantages of Using ``DVector``
--------------------------------
-
-* Built-in validation
-
-  * Incompatible segments
-  * Warnings if a provided dataset is incomplete
-
-* Easy geographical translations
-* Easy segment modification
-* Immediate compatibility with other TfN workstreams
-
+  * Can be version controlled directly alongside code
 
 Example Config [#]_
 -------------------
@@ -52,8 +36,31 @@ Example Config [#]_
 
 .. [#] Simplified example from scenario_configurations/iteration_5/base_employment_config.yml
 
-Example Processing Code [#]_
-----------------------------
+``caf.base``
+------------
+
+* Provides ``DVector`` - core structure used to represent data
+* Stores representation of:
+
+  * Geography (e.g. LSOA)
+  * Segmentation (e.g. "#adults in household")
+
+* Uses ``DataFrame`` from ``pandas`` to store the data "under the hood"
+
+Advantages of Using ``DVector``
+-------------------------------
+
+* Built-in validation
+
+  * Incompatible segments
+  * Warnings if a provided dataset is incomplete
+
+* Easy geographical translations and segment modification
+  * ``DVector.translate_zoning(other_system)``
+* Immediate compatibility with other TfN workstreams
+
+Example Data Reading Code [#]_
+------------------------------
 
 .. code-block:: python
 
@@ -84,3 +91,10 @@ Example Processing Code [#]_
    )
 
 .. [#] Simplified example from base_employment.py
+
+``caf.brain``
+-------------
+
+* TfN's machine learning library
+* Used for Northern Car Ownership Model (NorCOM)
+* Runs very quickly (minutes, rather than hours)
