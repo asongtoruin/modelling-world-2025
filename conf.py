@@ -27,6 +27,7 @@ revealjs_css_files = [
     "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next",
     "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono",
     "css/font.css",
+    "css/layout.css",
 ]
 
 # revealjs_style_theme = "moon"
