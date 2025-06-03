@@ -4,12 +4,20 @@ Code
 General Approach
 ----------------
 
+* Continue use of Git and GitHub
 * Use TfN's existing modules where possible
 * Prioritise flexibility - different scenarios to be tested
 * Make entry points clear
 
   * Store constants in a single location
   * Scenario-specific inputs put into YAML config files
+
+Git tracked changes + GitHub Hosting [#]_
+----------------------------------------
+
+.. image :: _static/content/github_code_example.png
+
+.. [#] `Commit b2e523a <https://github.com/asongtoruin/Land-Use/commit/b2e523a73536ac5505f31c41b45f44a6f00fdced>`_
 
 YAML config files
 -----------------
@@ -61,6 +69,14 @@ Advantages of Using ``DVector``
   * ``DVector.aggregate``
 
 * Immediate compatibility with other TfN workstreams
+
+Public Hosting = Public Discussions [#]_
+----------------------------------------
+
+.. image :: _static/content/github_issues_example.png
+   :height: 500
+
+.. [#] `caf.base/issues/96 <https://github.com/Transport-for-the-North/caf.base/issues/96>`_
 
 Example Data Reading Code [#]_
 ------------------------------
