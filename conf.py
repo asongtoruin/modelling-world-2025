@@ -16,21 +16,13 @@ author = 'Adam Ruszkowski'
 extensions = [
     "sphinx_revealjs",
     "sphinx_revealjs.ext.footnotes",
+    "sphinx_revealjs.ext.sass"
 ]
 
 templates_path = ['_templates']
 exclude_patterns = [".venv", "_build", "Thumbs.db", ".DS_Store", "_sections"]
 
 revealjs_static_path = ["_static"]
-revealjs_css_files = [
-    "revealjs/plugin/highlight/monokai.css",
-    "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next",
-    "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono",
-    "css/font.css",
-    "css/layout.css",
-]
-
-# revealjs_style_theme = "moon"
 
 revealjs_script_plugins = [
     {
@@ -45,6 +37,12 @@ revealjs_script_conf = {
     "hash": True,
     "width": 1200
 }
+
+revealjs_style_theme = "custom.css"
+
+revealjs_sass_src_dir = "_sass"
+revealjs_sass_out_dir = "_static"
+revealjs_sass_auto_targets = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
