@@ -101,3 +101,4 @@ Example Data Reading Code [#]_
 * TfN's machine learning library
 * Used for Northern Car Ownership Model (NorCOM)
 * Runs very quickly (minutes, rather than hours)
+* Not yet public (hopefully will be soon!)
