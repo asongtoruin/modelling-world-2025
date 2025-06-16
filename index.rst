@@ -6,9 +6,10 @@
 Open All The Way Down
 *********************
 
-**Using open source tools to derive, analyse and report land-use data**
+| **Using open source tools to derive,**
+| **analyse and report land-use data**
 
-Adam Ruszkowski \| Modelling World \| 2026-06-17
+Adam Ruszkowski \| AECOM \| Modelling World \| 2026-06-17
 
 .. include:: _sections/context.rst
 .. include:: _sections/data-approach.rst

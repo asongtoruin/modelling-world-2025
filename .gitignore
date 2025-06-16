@@ -1,2 +1,6 @@
 .venv
 _build
+
+# Auto-generated on build, don't track
+_static/custom.css
+_static/custom.css.map
