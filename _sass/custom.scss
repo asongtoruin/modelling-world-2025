@@ -7,39 +7,36 @@
 @import url(https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono);
 
 /**
- * Dracula colors by Zeno Rocha
- * https://draculatheme.com/contribute
+ * AECOM coroporate colour scheme!
  */
 html * {
 	color-profile: sRGB;
 	rendering-intent: auto;
 }
 
-$background: #282A36;
-$foreground: #F8F8F2;
-$selection:  #44475A;
-$comment:    #6272A4;
-$red:        #FF5555;
-$orange:     #FFB86C;
-$yellow:     #F1FA8C;
-$green:      #50FA7B;
-$purple:     #BD93F9;
-$cyan:       #8BE9FD;
-$pink:       #FF79C6;
+$background:   #ffffff;
+$foreground:   #000000;
+$fuschia:      #c70c6f;
+$darkteal:     #00353e;
+$orange:       #e52713;
+$yellow:       #ffce00;
+$earthgreen:   #008768;
+$limegreen:    #aecc53;
+$teal:         #009a9b;
 
 
 
 // Override theme settings (see ../template/settings.scss)
 $mainColor: $foreground;
-$headingColor: $purple;
+$headingColor: $earthgreen;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: $background;
-$linkColor: $pink;
-$linkColorHover: $cyan;
-$selectionBackgroundColor: $selection;
-$inlineCodeColor: $green;
-$listBulletColor: $cyan;
+$linkColor: $teal;
+$linkColorHover: $darkteal;
+$selectionBackgroundColor: $darkteal;
+$inlineCodeColor: $orange;
+$listBulletColor: $earthgreen;
 
 
 // Change text colors against light slide backgrounds
@@ -63,11 +60,11 @@ $listBulletColor: $cyan;
 .hljs-literal,
 .hljs-strong,
 .hljs-name {
-  color: $purple;
+  color: $earthgreen;
 }
 
 .hljs-code {
-  color: $pink;
+  color: $limegreen;
 }
 
 .hljs-class .hljs-title {
@@ -78,7 +75,7 @@ $listBulletColor: $cyan;
 .hljs-symbol,
 .hljs-regexp,
 .hljs-link {
-  color: $cyan;
+  color: $yellow;
 }
 
 .hljs-string,
@@ -96,14 +93,14 @@ $listBulletColor: $cyan;
 .hljs-variable,
 .hljs-template-tag,
 .hljs-template-variable {
-  color: $yellow;
+  color: $teal;
 }
 
 .hljs-comment,
 .hljs-quote,
 .hljs-deletion,
 .hljs-meta {
-  color: $comment;
+  color: $darkteal;
 }
 
 .hljs-keyword,
@@ -153,4 +150,11 @@ $listBulletColor: $cyan;
 
 .notitle h3 {
   opacity: 0;
+}
+
+.reveal-viewport {
+  background-image: url(images/AECOM_Logo_Black_RGB.svg);
+  background-size: 5%;
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
 }

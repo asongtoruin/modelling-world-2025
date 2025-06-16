@@ -8,7 +8,7 @@ from qrcode.image.styles.moduledrawers.svg import SvgPathCircleDrawer
 
 
 # Force white-coloured QR codes
-SvgPathFillImage.QR_PATH_STYLE["fill"] = "white"
+SvgPathFillImage.QR_PATH_STYLE["fill"] = "black"
 SvgPathFillImage.background = "rgba(255, 255, 255, 0)"
 
 links = {
