@@ -8,9 +8,10 @@ General Approach
 
   * Methodology *and* results
 
-* Store documentation alongside code
+* Store documentation in code repository
 
   * Single source for project info
+  * Version controlled docs
 
 * Host as a website with `ReadTheDocs <https://about.readthedocs.com/>`_
 
@@ -50,7 +51,7 @@ Tools
   
   * Python module - works with existing setup
   * Documentation written in ``.rst`` format
-  * Same approach used for this presentation!
+  * Also used for this presentation (source code `here <https://github.com/asongtoruin/modelling-world-2025>`_)
 
 * ``jinja2`` - templating
 * ``matplotlib`` - (static) graphs

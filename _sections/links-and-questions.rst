@@ -14,11 +14,11 @@ Scan or click the QR codes
 
    .. container:: third
       
-      ``Land-Use`` code
+      ``Land-Use`` code (GitHub)
    
    .. container:: third
       
-      ``Land-Use`` documentation
+      Hosted ``Land-Use`` documentation
 
 .. container:: flex-container
 
