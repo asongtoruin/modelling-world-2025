@@ -26,7 +26,7 @@ Background Developments
 * TfN's Common Analytical Framework (CAF) developed standardised Python modules
 * Census was updated
 
-  * Mixed years for England & Wales (2020) and Scotland (2021)
+  * Mixed years for England & Wales (2021) and Scotland (2022)
 
 * Open-source directive becoming more prominent at TfN
 
