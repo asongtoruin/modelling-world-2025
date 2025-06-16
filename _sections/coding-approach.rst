@@ -13,9 +13,10 @@ General Approach
   * Scenario-specific inputs put into YAML config files
 
 Git tracked changes + GitHub Hosting [#]_
-----------------------------------------
+-----------------------------------------
 
-.. image :: _static/content/github_code_example.png
+.. image :: _static/images/github_code_example.png
+   :height: 500
 
 .. [#] `Commit b2e523a <https://github.com/asongtoruin/Land-Use/commit/b2e523a73536ac5505f31c41b45f44a6f00fdced>`_
 
@@ -73,7 +74,7 @@ Advantages of Using ``DVector``
 Public Hosting = Public Discussions [#]_
 ----------------------------------------
 
-.. image :: _static/content/github_issues_example.png
+.. image :: _static/images/github_issues_example.png
    :height: 500
 
 .. [#] `caf.base/issues/96 <https://github.com/Transport-for-the-North/caf.base/issues/96>`_
