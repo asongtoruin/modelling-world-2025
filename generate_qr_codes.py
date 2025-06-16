@@ -13,7 +13,7 @@ SvgPathFillImage.background = "rgba(255, 255, 255, 0)"
 
 links = {
     "this_presentation": "https://asongtoruin.github.io/modelling-world-2025/",
-    "land-use": "https://github.com/Transport-for-the-North/Land-Use",
+    "land-use": "https://github.com/asongtoruin/Land-Use/tree/iteration_5",
     "land-use-docs": "https://tfn-land-use-test.readthedocs.io"
 }
 
