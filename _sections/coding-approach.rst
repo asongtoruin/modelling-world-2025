@@ -117,5 +117,23 @@ Example Data Reading Code [#]_
 
 * TfN's machine learning library
 * Used for Northern Car Ownership Model (NorCOM)
+
+  * Previous approach used prototypical sampling
+
 * Runs very quickly (minutes, rather than hours)
 * Not yet public (hopefully will be soon!)
+
+What the code does
+------------------
+
+* Reads in datasets 
+
+  * Different geographical resolution and segmentation
+
+* Merges on shared characteristics
+* Successive proportions applied
+* Iterative Proportional Fitting (IPF) used to rebalance with additional datasets
+
+  * Like a multidimensional furnessing procedure
+
+* NorCOM applied to rebalance car ownership

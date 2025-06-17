@@ -19,6 +19,9 @@ Website as Documentation
 ------------------------
 
 * Easy to navigate and share
+
+  * No need to reissue documents
+
 * Allows for interactivity
 * Simple formatting of code snippets
 * **Free hosting for open-source projects**
@@ -26,7 +29,7 @@ Website as Documentation
   * Land-Use documentation - ReadTheDocs
   * This presentation - GitHub Pages
 
-* Automatically rebuilds
+* Automatically rebuilds when changes are pushed
 
 Example
 -------
@@ -50,7 +53,7 @@ Tools
 * ``Sphinx``
   
   * Python module - works with existing setup
-  * Documentation written in ``.rst`` format
+  * Documentation written in ``.rst`` format (plaintext)
   * Also used for this presentation (source code `here <https://github.com/asongtoruin/modelling-world-2025>`_)
 
 * ``jinja2`` - templating
