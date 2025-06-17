@@ -4,7 +4,7 @@ Data
 General Approach
 ----------------
 
-* Update to a 2021 base year
+* Update to a 2023 base year
 * Flexible forecast years
 * Public datasets prioritised
 
